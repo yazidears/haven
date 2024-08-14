@@ -19,7 +19,7 @@ haven is a website designed to provide a calm, uncrowded online experience. only
 
 ## getting started
 
-1. access https://subnormalismo.com/
+1. access your haven at: [subnormalismo.com]
 
 ## contributing
 
