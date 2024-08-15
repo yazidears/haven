@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>haven - queue</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
+<body>
+    <div id="queue-page" class="page">
+        <h1>welcome to haven</h1>
+        <p>you are currently in the queue. please wait patiently.</p>
+        <p>your position: <span id="queue-position"></span></p>
+        <p>estimated time: <span id="estimated-time"></span></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.2/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script> 
+</body>
+</html>
