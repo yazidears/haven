@@ -1,19 +1,22 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>haven - queue</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+    <title>haven - waiting room</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div id="queue-page" class="page">
+    <div id="waiting-room-page" class="page">
         <h1>welcome to haven</h1>
-        <p>you are currently in the queue. please wait patiently.</p>
-        <p>your position: <span id="queue-position"></span></p>
-        <p>estimated time: <span id="estimated-time"></span></p>
+        <p>you are currently in the waiting room. please wait patiently.</p>
+        <p>your ID: <span id="user-id"></span></p> 
+        <p>your position: <span id="position"></span></p>
+        <p>total users: <span id="total-users"></span></p>
+        <p>users ahead: <span id="users-ahead"></span></p>
+        <p>estimated wait: <span id="estimated-wait"></span></p>
+        <h2>waiting list</h2>
+        <ul id="waiting-list"></ul>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.2/socket.io.js"></script>
-    <script src="{{ url_for('static', filename='script.js') }}"></script> 
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
