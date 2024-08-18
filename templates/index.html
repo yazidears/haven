@@ -6,15 +6,19 @@
 </head>
 <body>
     <div id="waiting-room-page" class="page">
-        <h1>the calm before the storm</h1>
-        <p>your moment of zen is approaching. hold tight.</p>
-        <p>your ID: <span id="user-id"></span></p> 
-        <p>your position: <span id="position"></span></p>
-        <p>total in line: <span id="total-users"></span></p>
-        <p>ahead of you: <span id="users-ahead"></span></p>
-        <p>estimated wait: <span id="estimated-wait"></span></p>
-        <h2>the queue</h2>
-        <ul id="waiting-list"></ul>
+        <div class="content-container"> </div>
+            <h1>step into serenity</h1>
+            <p>your personal oasis is moments away. take a deep breath and wait.</p>
+            <div class="info-box">
+                <p>your ID: <span id="user-id"></span></p> 
+                <p>your position: <span id="position"></span></p>
+                <p>souls seeking solace: <span id="total-users"></span></p>
+                <p>ahead in the queue: <span id="users-ahead"></span></p>
+                <p>estimated wait: <span id="estimated-wait"></span></p>
+            </div>
+            <h2>waiting list</h2>
+            <ul id="waiting-list"></ul>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.2/socket.io.js"></script>
