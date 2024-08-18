@@ -6,17 +6,18 @@
 </head>
 <body>
     <div id="waiting-room-page" class="page">
-        <h1>welcome to haven</h1>
-        <p>you are currently in the waiting room. please wait patiently.</p>
+        <h1>welcome to the haven</h1>
+        <p>find solace in solitude. your digital sanctuary awaits.</p>
         <p>your ID: <span id="user-id"></span></p> 
         <p>your position: <span id="position"></span></p>
-        <p>total users: <span id="total-users"></span></p>
-        <p>users ahead: <span id="users-ahead"></span></p>
+        <p>total seekers: <span id="total-users"></span></p>
+        <p>ahead of you: <span id="users-ahead"></span></p>
         <p>estimated wait: <span id="estimated-wait"></span></p>
-        <h2>waiting list</h2>
+        <h2>fellow seekers</h2>
         <ul id="waiting-list"></ul>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.2/socket.io.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
